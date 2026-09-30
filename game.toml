@@ -6,11 +6,12 @@ name = "Koudelka"
 id = "SLES-02897"
 players = 1
 exe = "disc/SLES_028.97"
+disc = "disc/Koudelka (Europe) (Disc 1).cue"
 discs = [
-    "disc/disc1.cue",
-    "disc/disc2.cue",
-    "disc/disc3.cue",
-    "disc/disc4.cue",
+    "disc/Koudelka (Europe) (Disc 1).cue",
+    "disc/Koudelka (Europe) (Disc 2).cue",
+    "disc/Koudelka (Europe) (Disc 3).cue",
+    "disc/Koudelka (Europe) (Disc 4).cue",
 ]
 disc_serials = [
     "SLES-02897",
@@ -26,26 +27,37 @@ stack_base = "0x801FFFF0"
 # Digests are for data Track 01 (first BINARY FILE / TRACK 01).
 [prepare_disc]
 out_dir = "disc"
-bin_name = "disc1.bin"
-cue_name = "disc1.cue"
+bin_name = "Koudelka (Europe) (Disc 1).bin"
+cue_name = "Koudelka (Europe) (Disc 1).cue"
 boot_exe = "SLES_028.97"
-known_sizes = [542302992]
+known_sizes = [542302992, 527073792, 680294832, 633061968]
 known_md5 = [
   "4644d60361161a52212dd9053413626d",
+  "a00cdc548e99d59b13e299dce769680b",
+  "9cd01443686d19677c6b51b8ae19aef3",
+  "137c2512d55e9d6174fe4685bf553860",
 ]
 known_sha1 = [
   "43cfec263deaaf482536506596d53b175972fe7f",
+  "8e779283ee927d9793e82e31cf6251afe61591e4",
+  "cab865b5d55be812d8004832921ebadabae174fe",
+  "3a64731471a96b917207e609610bd7c3e5eb64f1",
 ]
 known_crc32 = [
   "61cb5610",
+  "40cf1cc5",
+  "2e810962",
+  "fee955d2",
 ]
 
 [recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
 seeds = "seeds/ghidra_funcs.txt"
 out_dir = "generated"
 strict = true
 
 [runtime]
+openbios = false
 window_title = "Koudelka Recompiled"
 memcard_dir = "saves"
 
