@@ -5,7 +5,7 @@
 - Repository/branch: local pilot, `master`
 - Retail identity: Europe `SLES-02897`, `SLES-12897`, `SLES-22897`, and `SLES-32897`
 - Architecture lane: source-only owned-input setup host
-- License boundary: portfolio files use GPL-3.0-only; PSXRecomp keeps PolyForm Noncommercial 1.0.0; recomp-ui keeps MIT
+- License boundary: portfolio files use PolyForm Noncommercial 1.0.0; PSXRecomp keeps the license in `psxrecomp/LICENSE`; recomp-ui keeps MIT
 
 ## Executive state
 
