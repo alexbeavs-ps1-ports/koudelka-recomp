@@ -60,6 +60,7 @@ strict = true
 openbios = false
 window_title = "Koudelka Recompiled"
 memcard_dir = "saves"
+overlay_cache = true
 
 [video]
 renderer = "opengl"
